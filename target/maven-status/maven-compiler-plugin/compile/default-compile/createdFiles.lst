@@ -1,0 +1,8 @@
+testframework\pageobjects\OrderPage.class
+testframework\pageobjects\CartPage.class
+testframework\AbstractComponents\AbstractComponent.class
+testframework\pageobjects\ConfirmationPage.class
+testframework\pageobjects\ProductCatalogue.class
+testframework\resources\ExtentReporterNG.class
+testframework\pageobjects\CheckOutPage.class
+testframework\pageobjects\LandingPage.class

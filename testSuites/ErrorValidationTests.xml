@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!-- To run testcase parellel : parallel="tests" -->
+<suite parallel="tests" name="Suite">
+
+<!-- When you want to run selected test then below is code have to add and in the same class
+you have to set @Test(groups= {"ErrorHandling"}) above the method -->
+
+<groups>
+	<run>
+	<include name="ErrorHandling"/>
+	</run>
+</groups>
+
+
+<!-- Limiting how many thread has to run by giving thread-count="5", You can change the number-->
+  <test thread-count="5" name="Submit Order Test">
+    <classes>
+      <class name="testframework.tests.SubmitOrderTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="Error Validation Test">
+    <classes>
+      <class name="testframework.tests.ErrorValidations"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
